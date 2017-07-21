@@ -1,0 +1,46 @@
+/* Style whole Website */
+
+* {
+  background-color: black;
+  font-size: 22px;
+  font-family: helvetica;
+  color: seashell;
+  opacity: 0.9;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  height: 50px;
+  border-bottom: solid seashell 1px;
+}
+
+.header .logo, .header .navbar {
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.navbar span {
+  display: inline-block;
+  margin-left: 30px;
+  text-decoration: underline;
+}
+
+
+/* Temporary */
+
+.header, .header .logo, .header .navbar {
+  border: solid red;
+}
