@@ -2,7 +2,6 @@
 
 * {
   background-color: black;
-  font-size: 22px;
   font-family: helvetica;
   color: seashell;
   opacity: 0.9;
@@ -38,9 +37,34 @@
   text-decoration: underline;
 }
 
+/* Mission */
+
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  height: 700px;
+  width: 1200px;
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.statement h2, .statement h4 {
+  padding: 10px;
+}
+
 
 /* Temporary */
 
-.header, .header .logo, .header .navbar {
+.header, .header .logo, .header .navbar, .mission, .statement, .background {
   border: solid red;
 }
