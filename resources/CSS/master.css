@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+h2, h3, h4  {
+  padding: 10px;
+}
+
 /* Header */
 
 .header {
@@ -58,13 +62,104 @@
   width: 100%;
 }
 
-.statement h2, .statement h4 {
-  padding: 10px;
+/* Tea of the Month */
+
+.monthtea,.contenttom, .teaser, .productlist, .item {
+  display: flex;
 }
 
+.monthtea, .productlist{
+justify-content: center;
+}
 
-/* Temporary */
+.contenttom {
+  width: 1000px;
+  margin: 50px 0px;
+}
 
-.header, .header .logo, .header .navbar, .mission, .statement, .background {
+.contenttom, .teaser, .item {
+  flex-direction: column;
+}
+
+.item {
+  margin: 10px 0px;
+}
+
+.productlist {
+  flex-wrap: wrap;
+}
+
+.item img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+/* Locations */
+
+.locations, .background-loc, .contentadr, .adress {
+  display: flex;
+}
+
+.locations {
+  justify-content: center;
+}
+
+.background-loc {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentadr {
+  width: 980px;
+  height: 300px;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.adress {
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.contentadr, .background-loc h2 {
+  background-color: transparent;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+}
+
+.footer h2 {
+  margin-bottom: 30px;
+}
+
+.footer h5 {
+  margin-bottom: 20px;
+}
+
+/* legal */
+
+.legal {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Commented out - use for positioning of boxes
+
+.header, .header .logo, .header .navbar, .mission, .statement, .background, .monthtea, .contenttom, .teaser, .productlist, .item,
+.contentadr, .locations, .adress, .footer, .legal {
   border: solid red;
 }
+
+ */
